@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage  xmlns="http://xamarin.com/schemas/2014/forms"
+                   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                   x:Class="Master_Detail.MainPage"
+                   Title="Master_Detale">
+    <MasterDetailPage.Master>
+        <ContentPage 
+            Title="MasterDetail" 
+            BackgroundColor="AliceBlue">
+            <ContentPage.Content>
+                <StackLayout Padding="5,30,5,5 ">
+                    <Button Text="Contacts"></Button>
+                    <Button Text="TodoList"></Button>
+                    <Button Text="Remiders"></Button>
+                </StackLayout>
+            </ContentPage.Content>
+        </ContentPage>
+    </MasterDetailPage.Master>
+
+    <MasterDetailPage.Detail>
+        <ContentPage 
+            <ContentPage.Content>
+            <Label
+                Text ="DetailPage" 
+                VerticalOptions ="Center" 
+                HorizontalOptions ="Center">
+            </Label>
+           </ContentPage.Content>
+        </ContentPage>
+    </MasterDetailPage.Detail>
+
+</MasterDetailPage>
